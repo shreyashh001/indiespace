@@ -1,0 +1,219 @@
+/* Importing Poppins and Roboto fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@400;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://images6.alphacoders.com/127/1275171.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Style for the company logo */
+.logo {
+    width: 210px;
+    height: auto;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+
+/* Header and navigation styling */
+header {
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Styling for the Home page content */
+.home-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 50px;
+}
+
+/* Left Side: Styling the Headline and Subline */
+.quote-section {
+    flex: 1;
+    max-width: 45%; /* Allow space for the text */
+    padding-right: 20px; /* Add some padding to the right */
+}
+
+.quote {
+    font-size: 4em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    color: #ffcc00; /* Bold and catchy headline in a bright color */
+}
+
+.subline {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #ffffff; /* Keep the subline clear and simple */
+}
+
+/* Right Side: Image Styling */
+.image-section {
+    flex: 1.5;
+    text-align: right;
+    padding-right: 20px; /* Image will align to the extreme right */
+}
+
+.home-image {
+    max-width: 85%; /* Shrink the image slightly for balance */
+    height: auto;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out; /* Subtle fade-in animation */
+}
+
+/* Animation for Image Appearance */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateX(30px); } /* Start off-screen */
+    100% { opacity: 1; transform: translateX(0); } /* Slide in smoothly */
+}
+
+/* Styling for "This will be a reality soon" text */
+.reality-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-top: 20px;
+    text-align: right; /* Align with the image */
+}
+
+/* Hero section with left-aligned text */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 80px;
+    position: relative;
+}
+
+/* Gradient text for the hero section */
+.hero-text h1 {
+    font-size: 4em;
+    font-weight: 700;
+    background: linear-gradient(90deg, #8ca8b0, #386ca4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.0em;
+    font-weight: 300;
+    background: linear-gradient(90deg, #c1c5c6, #537889);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Rocket image styling - size and animation */
+.rocket-img {
+    width: 550px; /* Increased the rocket size */
+    height: auto;
+    position: absolute;
+    right: 25px;
+    bottom: 0;
+    animation: launch 10s ease-in-out infinite; /* Launch animation */
+}
+
+@keyframes launch {
+    0% { transform: translateY(0); }
+    30% { transform: translateY(-400px); } /* Rocket moving up */
+    100% { transform: translateY(-100vh); } /* Rocket disappears off the screen */
+}
+
+/* Footer styling */
+footer {
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-title {
+    margin-right: 10px;
+}
+
+.social-logo {
+    width: 30px;
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Email Us section styling */
+.email-us {
+    margin-top: 20px;
+}
+
+.email-link {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.email-link:hover {
+    color: #ffcc00;
+}
+
+
+.mission-section {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 500px;
+    flex: 1.5;
+    height:572px;
+    width:1000px;
+    text-align: right;
+    padding-right: 20px; /* Image will align to the extreme right */
+}
